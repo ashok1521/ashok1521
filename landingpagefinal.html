@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dropdown Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: larger;
+            background-color:rgba(252, 124, 124, 0.057);
+
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color:white;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: #130202;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar img
+        {
+
+        background: black;
+            position: relative;
+            bottom: 47px;
+            right:0px;
+height: 20px;
+width:20px;
+
+        }
+        .navbar p{
+            position: relative;
+            font-size: 50px;
+            font-style: italic;
+            left:20px;
+            color:blue;
+
+        }
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(15, 12, 12);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color:light;
+        }
+        .navbar img
+        {
+            color:#130202;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+
+<p>LibraTrove</p>
+    <a href="https://dineshkarthik18.github.io/dinesh/aboutus.html">ABOUT US</a>
+    
+    <div class="dropdown">
+        <button class="dropbtn">COURSES
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html">CSE</a>
+            <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html#">ECE</a>
+            <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html#">IT</a>
+        </div>
+    </div>
+    <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html#about">HOME</a>
+    
+</div>
+
+</body></html>
