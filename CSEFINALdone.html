@@ -3,37 +3,43 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Dropdown Navigation</title>
+    <title>CSE</title>
     <style>
         body {
             margin: 0;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-size: larger;
-            background:rgba(252, 124, 124, 0.057);
+            
         }
 
         .navbar {
             overflow: hidden;
-            background-color:white;
-        }
-
+            height: 25vh;
+            background-color: lightcyan;
+            background-image: url("logo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 360px 360px;
+            
+          }
+          @media (max-width: 768px) {
+            .navbar {
+              height: 25vh; 
+            }
+          }
+          
+          
         .navbar a {
+           
             float: right;
             display: block;
             color: #130202;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+           
         }
-        .navbar img
-        {
-            position: relative;
-            bottom: 47px;
-            right:0px;
-height: 20px;
-width:20px;
-
-        }
+      
         .navbar p{
             position: relative;
             font-size: 50px;
@@ -56,14 +62,16 @@ width:20px;
             outline: none;
             color: rgb(15, 12, 12);
             padding: 14px 16px;
+            
             background-color: inherit;
             font-family: inherit;
             font-size: inherit;
             margin: 0;
+            
         }
 
         .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: rgb(173, 240, 168);
+            background-color:lightblue;
         }
 
         .dropdown-content {
@@ -77,7 +85,7 @@ width:20px;
 
         .dropdown-content a {
             float: none;
-            color: rgb(247, 239, 239);
+            color:black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -85,13 +93,13 @@ width:20px;
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color:lightgray;
         }
 
         .dropdown:hover .dropdown-content {
             display: block;
         }
-      
+
         .billboard img
         {
             position: relative;
@@ -107,8 +115,9 @@ width:20px;
 
         }
         .images img:hover{
-            border-color:rgb(173, 240, 168);
-            background-color: black;
+            border-color:skyblue;
+            background-color: #130202;
+           
         }
         .billboard h1{
             color:black;
@@ -120,29 +129,37 @@ width:20px;
 
 <div class="navbar">
 
-    <p>LibraTrove</p>
-    <a href="https://dineshkarthik18.github.io/dinesh/aboutus.html">ABOUT US</a>
+    
+    
+    <a href="aboutusfinal.html">ABOUT US</a>
     
     <div class="dropdown">
         <button class="dropbtn">COURSES
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html">CSE</a>
-            <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html#">ECE</a>
-            <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html#">IT</a>
+            <a href="CSEFINALdone.html">CSE,CSD,CSM</a>
+            <a href="ECEfinaldone.html">ECE</a>
+            <a href="itfinaldone.html">IT</a>
+            <a href="eee.html">EEE</a>
+            <a href="civil.html">CIVIL</a>
+            <a href="mech.html">MECH</a>
         </div>
     </div>
-    <a href="file:///C:/Users/91830/OneDrive/Documents/Untitled-2.html#about">HOME</a>
+    <a href="index.html">HOME</a>
     
 </div>
 <div class="billboard">
-    <h1>CSE MATERIALS</h1>
+    <h1>CSE,CSD,CSM SUBJECTS</h1>
      <div class="images">
-    <a href=""><img src="dsfinal.jpg"></a>
-    <a href=""><img src="cofinal.jpg"></a>
-    <a href=""><img src="dc.jpg"></a>
-    <a href=""><img src="dms.jpg"></a>
+    <a href="dsafinaldone.html"><img src="dsa.jpg"></a>
+    <a href="co.html"><img src="co.jpg"></a>
+    <a href="dcfinal.html"><img src="dc.jpg"></a>
+    <a href="dms.html"><img src="dms.jpg"></a>
+    <a href="java.html"><img src="java.png"></a>
+    <a href="dtpi.html"><img src="dtpi.png"></a>
+
+
     </div>
 
 </div>
