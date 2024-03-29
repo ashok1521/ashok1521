@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNK tutions</title>
+    <style>
+        body
+        {
+            background-color:lightblue;
+            scroll-behavior: smooth;
+        }
+        .navbar
+        {
+            padding:1rem;
+            background-color: rgba(0, 0, 0, 0.692);
+        }
+        .navbar h1{
+            position: relative;
+            bottom:50px;
+            color:yellowgreen;
+            
+            font-size:50px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+      .links a
+    {
+        position: relative; /* Make links relatively positioned */
+      font-size: 35px;
+      color: white;
+      text-decoration: none;
+      bottom: 8vh; /* Not recommended for responsiveness */
+      margin-right: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      float:right;}
+    .links a:hover{
+        background-color:white;
+        color:black;
+    }
+    #mentor,#courses,#add
+             {
+                position: relative;
+                top:30px;
+                height:500px;
+                 width:100%;
+             }
+#brochure-btn
+{
+    position: relative; /* Make links relatively positioned */
+    font-size: 35px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:white;
+border-radius: 10px;
+    background-color:yellowgreen;
+    bottom: 8vh;
+    margin-right: 20px;
+    float:right;  
+}
+#brochure-btn:hover{
+    background-color:white;
+    color:black;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    background-image: url('10.jpeg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 100px;
+    width:450px;
+  }
+  .card1 {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:white;
+    background-image: url('logic.png');
+    background-repeat: no-repeat;
+    top:30px;
+    background-size:contain;
+    color:black;
+    height: 100px;
+    width:450px;
+  }
+  .card2 {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:white;
+    background-image: url('navodaya.png');
+    background-repeat: no-repeat;
+    top:30px;
+    background-size:contain;
+    color:black;
+    height: 100px;
+    width:450px;
+  }
+  .card3 {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:white;
+    background-image: url('iit.png');
+    background-repeat: no-repeat;
+    top:30px;
+    background-size:contain;
+    color:black;
+    height: 100px;
+    width:450px;
+  }
+  .card4 {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:white;
+    background-image: url('sainik.jpeg');
+    background-repeat: no-repeat;
+    top:30px;
+    background-size:contain;
+    color:black;
+    height: 100px;
+    width:450px;
+  }
+  .card5 {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color:white;
+    background-image: url('olympiad.jpeg');
+    background-repeat: no-repeat;
+    top:30px;
+    background-size:contain;
+    color:black;
+    height: 100px;
+    width:450px;
+  }
+.card h3{
+    position: relative;
+    left:30%;
+    margin-top: 30px;
+}
+.card1 h3{
+    position: relative;
+    left:42%;
+    margin-top: 30px;
+}
+.card2 h3{
+    position: relative;
+    top: 30px;
+    left:42%;
+    margin-top: 30px;
+}
+.card3 h3{
+    position: relative;
+    left:42%;
+    top: 30px;
+    margin-top: 30px;
+}
+.card4 h3{
+    position: relative;
+    left:42%;
+    top: 30px;
+    margin-top: 30px;
+}
+.card5 h3{
+    position: relative;
+    left:42%;
+    top: 30px;
+    margin-top: 30px;
+}
+
+  .card:hover,.card1:hover,.card2:hover,.card3:hover,.card4:hover,.card5:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.containerme
+{
+    text-align: end;
+}
+  .container,.container1 {
+    padding: 2px 16px;
+  }
+  .box
+  {
+    position: relative;
+    top:-10%;
+height: 500px;
+width:450px;
+background-color: white;
+
+  }
+  .box h1{
+    background-color:black;
+    color: white;
+    text-align: center;
+  }
+  .box img{
+    display: grid;
+    position: relative;
+     left:13%;
+
+    height: 300px;
+    width:300px;
+  }
+#marquee p
+{
+color:red;
+}
+#h1sec
+{
+    font-size: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <h1>RNK ACADEMY</h1>
+    <div class="links">
+        <a href="#mentor">MENTOR</a>
+        <a href="#courses">COURSES</a>
+        <input type="button" id="brochure-btn" value="BROCHURE" onclick="window.location.href='https://ashok1521.github.io/ashok1521/rnk.pdf'">
+    </div>
+   </div>
+   <marquee  direction="left" id="marquee" bgcolor="yellow"><p><b>Fees Only 800-1500/month</b>strictly visit this site in "desktop mode"</p></marquee>
+<section id="mentor">
+    
+    <div class="box">
+        <div class="details">
+            <h1>MENTOR</h1>
+            <img src="pro.jpg" alt="main">
+                   <h2>NIRANJAN KUMAR</h2>
+                   <p>Teaching Experience about 7 years</p>
+                   <a href="mailto:niranjanrnk77@gmail.com">niranjanrnk77@gmail.com</a>
+                   <p>contact me:<b>8179933690</b></p>
+          </div>
+      </div>
+</section>
+<section id="courses">
+    <div class="card">
+
+        <div class="container">
+          <h3><b>Long Term For Class Tenth Students</b></h3>
+          
+        </div>
+      </div>
+      <div class="card1">
+  
+        <div class="container1">
+          <h3><b>Conceptual Understanding</b></h3>
+          
+        </div>
+      </div>
+      <div class="card2">
+  
+        <div class="container2">
+          <h3><b>NAVODAYA</b></h3>
+          
+        </div>
+      </div>
+      <div class="card3">
+  
+        <div class="container3">
+          <h3><b>IIT</b></h3>
+          
+        </div>
+      </div>
+      <div class="card4">
+  
+        <div class="container4">
+          <h3><b>SAINIK SCHOOL</b></h3>
+          
+        </div>
+      </div>
+      <div class="card5">
+  
+        <div class="container5">
+          <h3><b>OLYMPIAD</b></h3>
+          
+        </div>
+      </div>
+      <h1 id="h1sec">ADDRESS:VASAVI NAGAR,RAJAM</h1>
+    </section>
+
+
+</body>
+</html>
