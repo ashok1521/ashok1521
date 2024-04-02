@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preferences</title>
+  <style>
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      .preferences {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .preference-item {
+        margin: 10px;
+      }
+      
+      .preference-item img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      
+      .save-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .save-btn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+      
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Preferences</h1>
+    <div class="preferences">
+      <div class="preference-item">
+        <img src="image1.jpg" alt="Image 1">
+        <label>
+          <input type="checkbox" class="preference-checkbox">
+          Image 1
+        </label>
+      </div>
+      <div class="preference-item">
+        <img src="designer.jpg" alt="Image 2">
+        <label>
+          <input type="checkbox" class="preference-checkbox">
+          Image 2
+        </label>
+      </div>
+      <div class="preference-item">
+        <img src="image3.jpg" alt="Image 3">
+        <label>
+          <input type="checkbox" class="preference-checkbox">
+          <h4>hello</h4>
+        </label>
+      </div>
+    </div>
+    <button id="saveChangesBtn" class="save-btn" disabled>Save Changes</button>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkboxes = document.querySelectorAll('.preference-checkbox');
+        const saveBtn = document.getElementById('saveChangesBtn');
+      
+        checkboxes.forEach(function(checkbox) {
+          checkbox.addEventListener('change', function() {
+            saveBtn.disabled = false;
+          });
+        });
+      });
+      
+  </script>
+</body>
+</html>
